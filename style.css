@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: neon;
+    src: url(neon.ttf);
+  }
+
+.body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.etch-frame {
+    background-color: #FF4346; 
+    width: 1000px;
+    height: 700px; 
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.title {
+    font-family: neon;
+    font-size: 70px;
+    color: #FFD452;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    height: 560px;
+    width: 795px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EDEDED;
+    margin: 0 auto 40px auto;
+}
+
+.grid-square {
+    border: 1px solid black;
+    background-color: brown;
+}
+
+.etch-footer {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    /* gap: 100px; */
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.etch-handle-left, .etch-handle-right {
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    width: 100px;
+    height: 100px;
+}
+
+.etch-handle-left {
+    margin-left: 40px;
+}
+
+.etch-handle-right {
+    margin-right: 40px;
+}
+
+.grid-size-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.grid-size-button {
+    background-color: #FFD452;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 25px;
+    padding: 8px 16px 8px 16px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.grid-color-container {
+    display: flex;
+    gap: 35px;
+}
+
+.grid-color-button {
+    height: 45px; 
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+#color {
+    background-color: black;
+}
+
+#rainbow {
+    background: linear-gradient(217deg, rgba(255,0,0,.5), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.5), rgba(0,0,255,0) 70.71%);
+}
+
+#erase {
+    background-color: white;
+}
