@@ -6,7 +6,11 @@
 @font-face {
     font-family: neon;
     src: url(neon.ttf);
-  }
+}
+
+button {
+    cursor: pointer;
+}
 
 .body {
     font-family: 'Roboto Mono', monospace;
@@ -34,17 +38,16 @@
 }
 
 .grid-container {
-    height: 560px;
-    width: 795px;
+    height: 400px;
+    width: 800px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #EDEDED;
+    flex: none;
+    background-color: white;
     margin: 0 auto 40px auto;
 }
 
 .grid-square {
-    border: 1px solid black;
-    background-color: brown;
 }
 
 .etch-footer {
@@ -53,7 +56,6 @@
     font-size: 20px;
     color: white;
     display: flex;
-    /* gap: 100px; */
     justify-content: space-between;
     margin-bottom: 30px;
 }
@@ -83,9 +85,10 @@
     background-color: #FFD452;
     font-family: 'Roboto Mono', monospace;
     border-radius: 25px;
-    padding: 8px 16px 8px 16px;
     border: none;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 80px;
+    height: 34px;
 }
 
 .grid-color-container {
@@ -100,7 +103,6 @@
     border: none;
     margin-top: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
 }
 
 #color {
@@ -116,3 +118,4 @@
 #erase {
     background-color: white;
 }
+
